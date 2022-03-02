@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <p> Bella's Outfit Generator</p>
+        <img src="img/dgk.JPG" id="myImg" width="300" height="300">
+            <img src="bottoms/blackjean.JPG" id="myImg2" width="300" height="300">
+    <img src="shoes/blazer.JPG" id="myImg3" width="300" height="300">
+
+    <input type="button" onclick="changeImgtop()" value="Change top">
+        <input type="button" onclick="changeImgbottom()" value="Change bottom">
+     <input type="button" onclick="changeImgshoe()" value="Change shoe">
+    
+    <script type="text/javascript">
+      var tops=[];
+      var bottoms=[];
+      var shoes=[];
+      var click3=0;
+      var click2=0;
+      var click=0;
+      function changeImgtop() {
+        if (click<=4){ click=click+1;
+        var top = document.getElementById('myImg');
+      tops[1] = "img/dgk.JPG";
+      tops[2] = "img/harleydavidson.JPG";
+      tops[3] = "img/nike.JPG";
+      tops[4] ="img/primitive.JPG";
+      tops[5] ="img/tommy.JPG";
+      top.src = tops[click];
+      console.log(click);
+                    }else
+                click=0;
+      }
+            
+      function changeImgbottom() {
+        if (click2<=4){ click2=click2+1;
+        var bottom = document.getElementById('myImg2');
+      bottoms[1] = "bottoms/blackjean.JPG";
+      bottoms[2] = "bottoms/bluejean.JPG";
+      bottoms[3] = "bottoms/checker.JPG";
+      bottoms[4] ="bottoms/khaki.JPG";
+      bottoms[5] ="bottoms/sweats.JPG";
+      bottom.src = bottoms[click2];
+      console.log(click2);
+                    }else
+                click2=0;
+      }
+      
+      function changeImgshoe() {
+        if (click3<=4){ click3=click3+1;
+        var bottom = document.getElementById('myImg3');
+      bottoms[1] = "shoes/blazer.JPG";
+      bottoms[2] = "shoes/forces.JPG";
+      bottoms[3] = "shoes/jordan.JPG";
+      bottoms[4] ="shoes/puma.JPG";
+      bottoms[5] ="shoes/vans.JPG";
+      bottom.src = bottoms[click3];
+      console.log(click3);
+                    }else
+                click3=0;
+      }
+    </script>
+
+  
+
+</body></html>
